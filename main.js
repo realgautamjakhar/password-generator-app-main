@@ -40,7 +40,7 @@ function generatePasswords(event) {
   //Showing password input option not selected warning
   if (strength === 0) {
     document.querySelector(".password-warning").innerHTML =
-      "Select password contain";
+      "Select password content";
   } else {
     document.querySelector(".password-warning").innerHTML = "";
   }
