@@ -60,27 +60,27 @@ function generatePasswords(event) {
 
   if (strength === 1) {
     passwordStrengthText.innerHTML = "Low";
-    passwordStrengthText.style.color = "Red";
+    passwordStrengthText.style.color = "#E63E6D";
     for (let i = 0; i < strength; i++) {
-      strengthBars[i].style.backgroundColor = "red";
+      strengthBars[i].style.backgroundColor = "#E63E6D";
     }
   } else if (strength === 2) {
     passwordStrengthText.innerHTML = "Medium";
-    passwordStrengthText.style.color = "yellow";
+    passwordStrengthText.style.color = "#FEC260";
     for (let i = 0; i < strength; i++) {
-      strengthBars[i].style.backgroundColor = "yellow";
+      strengthBars[i].style.backgroundColor = "#FEC260";
     }
   } else if (strength === 3) {
     passwordStrengthText.innerHTML = "High";
-    passwordStrengthText.style.color = "orange";
+    passwordStrengthText.style.color = "#D8E9A8";
     for (let i = 0; i < strength; i++) {
-      strengthBars[i].style.backgroundColor = "orange";
+      strengthBars[i].style.backgroundColor = "#D8E9A8";
     }
   } else if (strength === 4) {
     passwordStrengthText.innerHTML = "Excellent";
-    passwordStrengthText.style.color = "green";
+    passwordStrengthText.style.color = "#aeffac";
     for (let i = 0; i < strength; i++) {
-      strengthBars[i].style.backgroundColor = "green";
+      strengthBars[i].style.backgroundColor = "#aeffac";
     }
   } else {
     passwordStrengthText.innerHTML = "";
