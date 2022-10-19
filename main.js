@@ -100,7 +100,10 @@ function generatePassword(length, passwordstring) {
 
 copybtn.addEventListener("click", function () {
   console.log("copy");
+
   let copytext = document.querySelector(".passwordOutput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
   navigator.clipboard.writeText(copytext.textContent);
   alert("Password Copied");
 });
