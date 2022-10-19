@@ -8,7 +8,7 @@ let strength = 0;
 let upparcase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lowercase = "abcdefghijklmnopqrstuvwxyz";
 let numbers = "1234567890";
-let symbols = "@#$";
+let symbols = "~!@#$%^&*()_-+={[}]|;<,>.?/";
 
 slider.addEventListener("click", generatePasswords); //Generate Password (For Desktop)
 slider.addEventListener("touchmove", generatePasswords); //For mobiles device (Any touchscrn)
@@ -99,7 +99,6 @@ function generatePassword(length, passwordstring) {
 }
 
 copybtn.addEventListener("click", function () {
-
   let copytext = document.querySelector(".passwordOutput");
   navigator.clipboard.writeText(copytext.textContent);
   alert("Password Copied");
