@@ -187,4 +187,7 @@ body{
     .section-one h1{
         width: 250px;
     }
+    .copy-pass{
+        display: none;
+    }
 }
